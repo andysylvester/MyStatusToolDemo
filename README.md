@@ -79,21 +79,17 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  <a href="ttps://github.com/andysylvester/opml_includes_demo">
-    <img src="images/demoapp.png" alt="Demo app">
-  </a>
+My Status Tool is an application that provides the basic posting and reading functionality within Twitter, but using [RSS](http://cyber.law.harvard.edu/rss/rss.html") and [rssCloud](http://home.rsscloud.co/)" as the enabling technologies.
 
-        My Status Tool is an application that provides the basic posting and reading functionality within Twitter, but using [RSS](http://cyber.law.harvard.edu/rss/rss.html") and [rssCloud](http://home.rsscloud.co/)" as the enabling technologies.
+The basic functions are:
+* Ability to make a short post
+* When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets
+* The tool provides hosting for the RSS feed and posts created
+* The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets
 
-		The basic functions are:
-		* Ability to make a short post
-		* When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets
-		* The tool provides hosting for the RSS feed and posts created
-		* The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets
+The tool is set up for a single user and requires some configuration. Please consult the Installation section in this README file for more information.
 
-		The tool is set up for a single user and requires some configuration. Please consult the Installation section in this README file for more information.
-
-		This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo.
+This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
