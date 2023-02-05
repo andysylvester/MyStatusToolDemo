@@ -1,0 +1,23 @@
+{
+  "name": "MyStatusTool",
+  "version": "0.1.0",
+  "description": "A microblogging app based on RSS and rssCloud",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["linkblogging", "microblogging"],
+  "author": "Andy Sylvester <sylvester.andy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "daverss": "^0.6.0",
+    "daveutils": "^0.4.64",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mocha": "^10.2.0",
+    "reallysimple": "^0.4.22",
+    "request": "^2.88.2",
+    "ws": "^8.11.0"
+  }
+}

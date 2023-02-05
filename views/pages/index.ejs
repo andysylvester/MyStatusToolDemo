@@ -1,0 +1,39 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+
+   <script>
+       const webSocket = new WebSocket('ws://fedwiki.andysylvester.com:500/');
+       let el;
+ 
+       webSocket.onmessage = (event) => {
+           const data = JSON.parse(event.data);
+           if (data.type == 'time') {
+               el = document.getElementById('time');
+               el.innerHTML = data.time;
+           }
+       };
+   </script>
+
+<div class="container">
+    <h2>Welcome to My Status Tool - make a post!</h2>
+	<p>
+<p id="time1"></p>
+	<form action="/" method="post">
+  	<!-- user input-->
+  	Test input text box:<br>
+  	<input type="text" name="username" placeholder='Enter your post here...'><br><br>
+  	<!-- submit button -->
+  	<input type="submit" value="Post your update!">
+	</form>
+<p>
+    <h3>Subscribed feeds</h3>
+<p id="time"></p>
+<p>
+<% if(userValue!=null){ %>  
+   Data Entered as <%= userValue.first %>
+<%}%> 
+</div>
+
+
+
+<%- include('../partials/footer') %>

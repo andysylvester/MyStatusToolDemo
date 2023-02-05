@@ -1,0 +1,39 @@
+{
+	"host": "http://fedwiki.andysylvester.com:443",
+	"subs": [
+		"http://fedwiki.andysylvester.com:443/feed/rss.xml",
+		"http://radio3.io/users/davewiner/rss.xml",
+		"http://hn.geekity.com/newstories.xml",
+		"http://scripting.com/rss.xml",
+		"https://rsscloud4.wordpress.com/feed/",
+		"http://oldschool.scripting.com/AndySylvester99/rss.xml",
+		"http://oldschool.scripting.com/KenSmith/rss.xml",
+		"http://oldschool.scripting.com/PDXProtestNews/rss.xml",
+		"http://data.feedland.org/feeds/davewiner.xml",
+		"http://data.feedland.org/feeds/AndySylvester99.xml"
+	],
+	"baseURL": "http://fedwiki.andysylvester.com:443/",
+	"myDomain": "fedwiki.andysylvester.com",
+	"myPort": 443,
+	"feedURL": "http://fedwiki.andysylvester.com:443/feed/rss.xml",
+    "headElements":
+		{
+			"title": "Andy's test linkblog feed",
+			"link": "https://fedwiki.andysylvester.com:443/feed/rss.xml",
+			"description": "Trying out the daverss package.",
+			"language": "en-us",
+			"generator": "My Status Tool",
+			"docs": "http://cyber.law.harvard.edu/rss/rss.html",
+			"twitterScreenName": "AndySylvester99",
+			"facebookPageName": "",
+			"maxFeedItems": 25,
+			"flRssCloudEnabled": true,
+			"rssCloudDomain": "rpc.rsscloud.io",
+			"rssCloudPort": 5337,
+			"rssCloudPath": "/pleaseNotify",
+			"rssCloudRegisterProcedure": "",
+			"rssCloudProtocol": "http-post"
+		}
+	
+	}
+
