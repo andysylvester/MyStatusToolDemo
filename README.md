@@ -38,7 +38,7 @@
     <a href="https://github.com/andysylvester/MyStatusToolDemo/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://fedwiki.andysylvester.com:443">View Demo</a>
+    <a href="http://fedwiki.andysylvester.com:443">View Demo App</a>
     ·
     <a href="https://github.com/andysylvester/MyStatusToolDemo/issues">Report Bug</a>
     ·
@@ -89,7 +89,7 @@ The basic functions are:
 
 The tool is set up for a single user and requires some configuration. Please consult the Installation section in this README file for more information.
 
-This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo.
+This app is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the Github repo.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -98,11 +98,10 @@ This is a proof of concept, but will be further developed. If you find problems 
 
 ### Built With
 
-* [opmlPackage](https://github.com/scripting/opmlPackage)
-* [outlineBrowser](https://github.com/scripting/outlineBrowser)
 * [Express](https://expressjs.com/)
 * [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [opmlPackage](https://github.com/scripting/opmlPackage)
+* [outlineBrowser](https://github.com/scripting/outlineBrowser)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -115,7 +114,7 @@ Here is how to get your copy of the app running!
 
 ### Prerequisites
 
-* Node.js install (can be local or on a server)
+* Node.js install (needs to be on a server on the Internet)
 * NPM install
 * Git (optional, but can be helpful on the install)
 
@@ -133,7 +132,7 @@ This will create a folder called MyStatusToolDemo
    ```sh
    npm install
    ```
-4. The app uses a configuration file (config.json) to 
+4. The app uses a [configuration file](https://github.com/andysylvester/MyStatusToolDemo/blob/main/config.json) to set parameters needed for the app and for creating the RSS feed. The default parameters are for the demo app, this file should be updated for the parameters for the server where the app runs.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -148,26 +147,19 @@ To start the app, enter the following command in a terminal window in the app fo
    npm start
    ```
 
-The app will start on port 3002. If you are running the app locally, open "http://localhost:3002" in a web browser. You should see the app running as in the screenshot shown earlier on this page. If you are running the app on a server, open a tab in a web browser and enter the URL of the server with ":3002" at the end of the URL. Again, you should see the app running as in the screenshot shown earlier on this page.
+The app will start on port 443. Open a tab in a web browser and enter the URL of the server with ":443" at the end of the URL. Again, you should see the app running as in the screenshot shown earlier on this page.
 
-You can see the app running <a href="http://fedwiki.andysylvester.com:3002/">here</a>.
+You can see the app running <a href="http://fedwiki.andysylvester.com:443/">here</a>.
 
 ## Customizing The App
 
-The includes.opml file in the repo can be edited to load different OPML files. You can edit includes.opml using a text editor or an outliner like [Drummer](http://drummer.scripting.com/). A key requirement is that in each entry within includes.opml, the attribute "type" must be set to "include". An example is as follows:
-
-   ```sh
-   <outline created="Wed, 11 May 2022 21:03:42 GMT" name="oregonElections" text="Oregon Elections" type="include" url="http://drummer.scripting.com/PDXProtestNews/OregonElections.opml"></outline>
-   ```
-The text on the main page is in file /views/index.pug, and can be changed as you wish.
-
 The main app is mostly an auto-generated [Express](https://expressjs.com/) application, so other Express features can be added.
 
-The styling of the app can certainly be improved, stylesheets are in /public/stylesheets.
+[Embedded Javascript](https://ejs.co/) templates are used for the creation of the pages, the [Bootstrap](https://getbootstrap.com/) toolkit is also used for formatting.
 
-The app currently runs on port 3002, this can be changed by editing /bin/www.
+The app currently runs on port 443, this can be changed by editing the [configuration file](https://github.com/andysylvester/MyStatusToolDemo/blob/main/config.json). However, if a port other than 443 or 80 is used for the app, updates to RSS feeds from WordPress.com sites will not be received. 
 
-If you are running the app on a server, you can use the NPM package [forever](https://www.npmjs.com/package/forever) to keep the app running continuously. To install the package, type the following command in a terminal window on your server:
+You can use the NPM package [forever](https://www.npmjs.com/package/forever) to keep the app running continuously. To install the package, type the following command in a terminal window on your server:
 
    ```sh
    sudo npm install forever -g
