@@ -30,19 +30,19 @@
 <br>
 <div align="center">
 
-<h3 align="center">OPML Includes Demo</h3>
+<h3 align="center">My Status Tool Demo</h3>
 
   <p align="center">
     View a demo of how to include multiple OPML files in a single file!
     <br />
-    <a href="https://github.com/andysylvester/opml_includes_demo"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/andysylvester/MyStatusToolDemo/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="http://fedwiki.andysylvester.com:3002/">View Demo</a>
+    <a href="http://fedwiki.andysylvester.com:443">View Demo</a>
     ·
-    <a href="https://github.com/andysylvester/opml_includes_demo/issues">Report Bug</a>
+    <a href="https://github.com/andysylvester/MyStatusToolDemo/issues">Report Bug</a>
     ·
-    <a href="https://github.com/andysylvester/opml_includes_demo/issues">Request Feature</a>
+    <a href="https://github.com/andysylvester/MyStatusToolDemo/issues">Request Feature</a>
   </p>
 </div>
 
@@ -83,10 +83,25 @@
     <img src="images/demoapp.png" alt="Demo app">
   </a>
 
+    <p>
+        My Status Tool is an application that provides the basic posting and reading functionality within Twitter, but using <a href="http://cyber.law.harvard.edu/rss/rss.html">RSS</a> and <a href="http://home.rsscloud.co/">rssCloud</a> as the enabling technologies.
+    </p>
+    <p>
+		The basic functions are:
+		<ul>
+		<li>Ability to make a short post</li>
+		<li>When a post is made, a RSS feed is updated, a separate page for the post is created, and the post appears on the home page via Websockets</li>
+		<li>The tool provides hosting for the RSS feed and posts created</li>
+		<li>The tool can display updates to any RSS feeds that support the rssCloud protocol via Websockets</li>
+		</ul>
+    </p>
+    <p>
+		The tool is set up for a single user and requires some configuration. Please consult the README on the <a href="https://github.com/andysylvester/MyStatusToolDemo/">Github repo</a> for more information.
+    </p>
+    <p>
+		This is a proof of concept, but will be further developed. If you find problems in the tool, or want to suggest features, feel free to create an issue in the <a href="https://github.com/andysylvester/MyStatusToolDemo/">Github repo</a>.
+    </p>
 
-This app demonstrates the includes feature of the <a href="https://github.com/scripting/opmlPackage">opmlPackage</a> NPM package by <a href="http://scripting.com/">Dave Winer</a>. It also includes code from the <a href="https://github.com/scripting/outlineBrowser">outlineBrowser</a> toolkit, also by Dave Winer.
-
-This example shows four different <a href="http://opml.org/">OPML</a> files which have been brought into the app through the use of a single OPML containing links to the four OPML files by using the includes feature.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -120,16 +135,17 @@ Here is how to get your copy of the app running!
 
 1. Clone the repo if you have Git installed
    ```sh
-   git clone https://github.com/andysylvester/opml_includes_demo.git
+   git clone https://github.com/andysylvester/MyStatusToolDemo.git
    ```
-This will create a folder called opml_includes_demo
+This will create a folder called MyStatusToolDemo
 
-2. If you do not have Git installed, you can download a copy of the app as a Zip file, then unzip the app into a folder called "opml_includes_demo" on your computer/server.
+2. If you do not have Git installed, you can download a copy of the app as a Zip file, then unzip the app into a folder called "MyStatusToolDemo" on your computer/server.
 
 3. In a terminal window, install the required NPM packages by changing directory to the install folder, then type the following command:
    ```sh
    npm install
    ```
+4. The app uses a configuration file (config.json) to 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -171,7 +187,7 @@ If you are running the app on a server, you can use the NPM package [forever](ht
 Once you have installed the forever package, use the following command to start the app:
 
    ```sh
-   forever start ./bin/www
+   forever start app.js
    ```
 
 To stop the forever process, type the following in the app directory:
@@ -180,7 +196,6 @@ To stop the forever process, type the following in the app directory:
    forever stopall
    ```
 
-The file includes_example.json is a text file of the JSON representation of the included outlines. To display different information from the outlines, look at /routes/index.js to see how the HTML is generated. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -218,7 +233,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Andy Sylvester - [@AndySylvester99](https://twitter.com/AndySylvester99) - sylvester.andy@gmail.com
 
-Project Link: [https://github.com/andysylvester/opml_includes_demo](https://github.com/andysylvester/opml_includes_demo)
+Project Link: [https://github.com/andysylvester/MyStatusToolDemo](https://github.com/andysylvester/MyStatusToolDemo)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -227,9 +242,9 @@ Project Link: [https://github.com/andysylvester/opml_includes_demo](https://gith
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Dave Winer](http://scripting.com/) - Creator of the opmlPackage NPM module
-* [Ken Smith](http://oldschool.scripting.com/KenSmith/) - Collaborator/beta tester
-* [Frank McPherson](http://oldschool.scripting.com/frankm/) - Collaborator/beta tester
+* [Colin Walker](https://colinwalker.blog/) - Inspiration from his recent tool, [hyblog](https://github.com/colin-walker/hyblog)
+* [Andrew Shell](https://blog.andrewshell.org/) - Developer of the rssCloud server used by the app
+* [Dave Winer](http://scripting.com/) - Creator of many of the NPM modules used in this app
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -237,16 +252,16 @@ Project Link: [https://github.com/andysylvester/opml_includes_demo](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/andysylvester/opml_includes_demo.svg?style=for-the-badge
-[contributors-url]: https://github.com/andysylvester/reopml_includes_demopo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/andysylvester/opml_includes_demo.svg?style=for-the-badge
-[forks-url]: https://github.com/andysylvester/opml_includes_demo/network/members
-[stars-shield]: https://img.shields.io/github/stars/andysylvester/opml_includes_demo.svg?style=for-the-badge
-[stars-url]: https://github.com/andysylvester/opml_includes_demo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/andysylvester/opml_includes_demo.svg?style=for-the-badge
-[issues-url]: https://github.com/andysylvester/opml_includes_demo/issues
-[license-shield]: https://img.shields.io/github/license/andysylvester/opml_includes_demo.svg?style=for-the-badge
-[license-url]: https://github.com/andysylvester/opml_includes_demo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/andysylvester/MyStatusToolDemo.svg?style=for-the-badge
+[contributors-url]: https://github.com/andysylvester/MyStatusToolDemo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/andysylvester/MyStatusToolDemo.svg?style=for-the-badge
+[forks-url]: https://github.com/andysylvester/MyStatusToolDemo/network/members
+[stars-shield]: https://img.shields.io/github/stars/andysylvester/MyStatusToolDemo.svg?style=for-the-badge
+[stars-url]: https://github.com/andysylvester/MyStatusToolDemo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/andysylvester/MyStatusToolDemo.svg?style=for-the-badge
+[issues-url]: https://github.com/andysylvester/MyStatusToolDemo/issues
+[license-shield]: https://img.shields.io/github/license/andysylvester/MyStatusToolDemo.svg?style=for-the-badge
+[license-url]: https://github.com/andysylvester/MyStatusToolDemo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/andrew-sylvester-b426a251
 [product-screenshot]: images/screenshot.png
