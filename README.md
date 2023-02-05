@@ -33,9 +33,7 @@
 <h3 align="center">My Status Tool Demo</h3>
 
   <p align="center">
-    View a demo of how to include multiple OPML files in a single file!
-    <br />
-    <a href="https://github.com/andysylvester/MyStatusToolDemo/"><strong>Explore the docs »</strong></a>
+    View a <a href="http://fedwiki.andysylvester.com:443">demo</a>of the MyStatusTool app!
     <br />
     <br />
     <a href="http://fedwiki.andysylvester.com:443">View Demo App</a>
