@@ -33,7 +33,7 @@
 <h3 align="center">My Status Tool Demo</h3>
 
   <p align="center">
-    View a <a href="http://fedwiki.andysylvester.com:443">demo</a>of the MyStatusTool app!
+    View a <a href="http://fedwiki.andysylvester.com:443">demo</a> of the MyStatusTool app!
     <br />
     <br />
     <a href="http://fedwiki.andysylvester.com:443">View Demo App</a>
