@@ -146,12 +146,16 @@ This will create a folder called MyStatusToolDemo
 To start the app, enter the following command in a terminal window in the app folder:
 
    ```sh
-   npm start
+   node app.js
    ```
 
-The app will start on port 443. Open a tab in a web browser and enter the URL of the server with ":443" at the end of the URL. Again, you should see the app running as in the screenshot shown earlier on this page.
+The app will start on port 443. Open a tab in a web browser and enter the URL of the server with ":443" at the end of the URL. The app will read the RSS feeds listed in the config.json file and display their current content. 
 
-You can see the app running <a href="http://fedwiki.andysylvester.com:443/">here</a>.
+To use the app, enter some text in the text field at the top of the window and click the button. The post will appear below the "Subscribed feeds" area, the RSS feed will be updated, and a page will be created for the new post. You can click on the RSS Feed item in the menu bar to see the list of items.
+
+Again, you should see the app running as in the screenshot shown earlier on this page.
+
+You can see the app running <a href="http://fedwiki.andysylvester.com:443/">here</a> and give it a try! Also, feel free to install a copy on a server yourself!
 
 ## Customizing The App
 
