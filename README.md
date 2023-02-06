@@ -149,7 +149,7 @@ To start the app, enter the following command in a terminal window in the app fo
    node app.js
    ```
 
-The app will start on port 443. Open a tab in a web browser and enter the URL of the server with ":443" at the end of the URL. The app will read the RSS feeds listed in the config.json file and display their current content. 
+The app will start on port 443 by default. Open a tab in a web browser and enter the URL of the server with ":443" at the end of the URL. The app will read the RSS feeds listed in the config.json file and display their current content. 
 
 To use the app, enter some text in the text field at the top of the window and click the button. The post will appear below the "Subscribed feeds" area, the RSS feed will be updated, and a page will be created for the new post. You can click on the RSS Feed item in the menu bar to see the list of items.
 
