@@ -1,4 +1,4 @@
-var myVersion = "0.40", myProductName = "testRssCloud", myPort = 0, myDomain = ""; 
+var myVersion = "0.40", myProductName = "testRssCloud", myPort = 443, myDomain = ""; 
 const express = require('express');
 const app = express();
 const port = 443;
