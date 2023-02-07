@@ -3,7 +3,6 @@
 	"subs": [
 		"http://fedwiki.andysylvester.com:443/feed/rss.xml",
 		"http://radio3.io/users/davewiner/rss.xml",
-		"http://hn.geekity.com/newstories.xml",
 		"http://scripting.com/rss.xml",
 		"https://rsscloud4.wordpress.com/feed/",
 		"http://oldschool.scripting.com/AndySylvester99/rss.xml",
@@ -19,7 +18,7 @@
     "headElements":
 		{
 			"title": "Andy's test linkblog feed",
-			"link": "https://fedwiki.andysylvester.com:443/feed/rss.xml",
+			"link": "https://fedwiki.andysylvester.com:443",
 			"description": "Trying out the daverss package.",
 			"language": "en-us",
 			"generator": "My Status Tool",

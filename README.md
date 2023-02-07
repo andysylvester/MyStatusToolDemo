@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-My Status Tool is an application that provides the basic posting and reading functionality within Twitter, but using [RSS](http://cyber.law.harvard.edu/rss/rss.html") and [rssCloud](http://home.rsscloud.co/) as the enabling technologies.
+My Status Tool is an application that provides the basic posting and reading functionality within Twitter, but using [RSS](http://cyber.law.harvard.edu/rss/rss.html) and [rssCloud](http://home.rsscloud.co/) as the enabling technologies.
 
 The basic functions are:
 * Ability to make a short post
